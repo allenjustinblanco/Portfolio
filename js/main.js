@@ -1,4 +1,11 @@
 $(document).ready(function(){
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.fixed-action-btn');
+        var instances = M.FloatingActionButton.init(elems, {
+            direction: 'left',
+            hoverEnabled: false
+        });
+    });
     $('.modal').modal();
     AOS.init();
     M.AutoInit();
@@ -33,6 +40,20 @@ $(document).ready(function(){
         $('.toggle').toggleClass('lightblue').removeClass('lightpurple').removeClass('purpletext');
         $('a').toggleClass('lightblue').removeClass('lightpurple').removeClass('purpletext');
     });
+    $('#submit').click(function(){
+        var firstname = $('#firstname').val();
+        var lastname = $('#lastname').val();
+        var email = $('#email').val();
+        var subject = $('#subject').val();
+        var varData = 'firstname=' + firstname + 'lastname=' + lastname + 'subject=' + subject + '&email=' + email;
+        console.log(varData);
+
+        $.ajax({
+            type: 'POST',
+            url: 'php.php',
+            data: varData,
+        })
+    })
 });
 
 

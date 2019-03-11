@@ -14,10 +14,10 @@
              <nav class="black white-text" id="navbar">
                  <div class="nav-wrapper container">
                      <a href="#top"><img src="images/logo4.png" width="100" class="no-padding" alt="logo"/></a>
-                     <a href="#" data-target="slide-out" class="sidenav-trigger white-text">=</a>
+                     <a href="#" data-target="slide-out" class="sidenav-trigger white-text"><img src="images/menu.png" alt="menu" width="40" style="margin-top: 15px;"></a>
                      <ul class="right hide-on-med-and-down">
                        <li><a href="#AboutMe">About Me</a></li>
-                       <li><a href="url(https://drive.google.com/file/d/1bigI8eEWzfmBgbjapvUHQ0R35SXiteBl/view?usp=sharing)" target="_blank">Resume</a></li>
+                       <li><a href="https://drive.google.com/file/d/1bigI8eEWzfmBgbjapvUHQ0R35SXiteBl/view?usp=sharing" target="_blank">Resume</a></li>
                        <li><a href="#portfolio">Portfolio</a></li>
                        <li><a href="#Contact">Contact</a></li>
                     </ul>
@@ -84,7 +84,7 @@
                         <a class="carousel-item"><img width="100%" src="images/css-3.png"  alt="CSS3"/></a>
                         <a class="carousel-item"><img width="100%" src="images/java.png"  alt="Java"/></a>
                         <a class="carousel-item"><img width="100%" src="images/spring-boot.png"  alt="MySQL"/></a>
-                        <a class="carousel-item"><img width="100%" src="images/spring-boot.png"  alt="Spring Boot"/></a>
+                        <a class="carousel-item"><img width="100%" src="images/MySQL..png"  alt="Spring Boot"/></a>
                         <a class="carousel-item"><img width="100%" src="images/java-script.png" alt="Javascript"/></a>
                     </div>
                 </div>
@@ -96,7 +96,7 @@
 
 <!--fixed action button-->
 <div class="fixed-action-btn" >
-    <a class="btn-floating btn-large white pulse"></a>
+    <a class="btn-floating btn-large white pulse right"></a>
     <ul>
         <li><a class="btn-floating purpletextback" id="purple"></a></li>
         <li><a class="btn-floating lightblueback" id="blue"></a></li>
@@ -211,7 +211,6 @@
        <div class="container">
            <div class="row">
                <div class="col s12 black-text Rubik">
-                   <form th:action="@{/contact}" method="post">
 
                        <label for="firstname">First Name</label>
                        <input type="text" id="firstname" name="firstname" placeholder="Your name.."/>
@@ -225,8 +224,7 @@
                        <label for="subject">Subject</label>
                        <textarea id="subject" name="subject" placeholder="Write something.." class="materialize-textarea"></textarea>
 
-                       <button class="btn waves-effect waves-light black white-text" type="submit" name="action">Submit</button>
-                   </form>
+                       <button class="btn waves-effect waves-light black white-text" type="submit" name="action" id="submit">Submit</button>
                    <div class="col s12 center-align">
                        <div class="icon-block">
                            <h6 class="Quicksand white-text toggle"><span class="toggle">Personal</span> Information</h6>
@@ -244,8 +242,7 @@
    <div class="page-footer grey darken-2 black-text no-padding">
        <div class="footer-copyright">
            <div class="container black-text">
-               © 2019 Copyright Text
-               <div class="right">
+               <div class="center">
                <a href="https://github.com/allenjustinblanco" target="_blank">
                    <img src="images/github-logo.png" alt="github" width="30"/> </a>
                <a href="https://www.linkedin.com/in/justin-blanco/" target="_blank">
