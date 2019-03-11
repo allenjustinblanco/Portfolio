@@ -1,0 +1,93 @@
+/*sidenav class*/
+.sidenav-trigger {
+    color: #26a69a;
+}
+.purpletext {
+    color: #AC00FF;
+}
+.lightblue {
+    color: #19A6FF;
+}
+.lightpurple {
+    color: #7200FF;
+}
+.purpletextback {
+    background-color: #AC00FF;
+}
+.lightblueback {
+    background-color: #19A6FF;
+}
+.lightpurpleback {
+    background-color: #7200FF;
+}
+.purple {
+    background-color: purple;
+}
+/*parallax classes*/
+.parallax-container .section {
+    width: 100%;
+}
+
+/*font classes*/
+.Nunito {
+    font-family: 'Nunito', sans-serif;
+}
+.Quicksand {
+    font-family: 'Quicksand', sans-serif;
+}
+.Pacifico {
+    font-family: 'Pacifico', cursive;
+}
+.Nunito-sans {
+    font-family: 'Nunito Sans', sans-serif;
+}
+.Rubik {
+    font-family: 'Rubik', sans-serif;
+}
+/*icon classes*/
+.icon-block {
+    padding: 0 15px;
+}
+.icon-block .material-icons {
+    font-size: inherit;
+}
+
+/*footer classes*/
+footer.page-footer {
+    margin: 0;
+}
+
+/*navbar classes*/
+#navbar {
+    transition: top 0.3s;
+}
+
+/*p class*/
+p {
+    line-height: 2rem;
+}
+
+/*!*media queries*!*/
+/*phones*/
+@media only screen  and (max-width : 500px) {
+    .parallax-container {
+        height: 600px;
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+    .parallax-container {
+        height: 700px;
+    }
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+    .parallax-container {
+        height: 800px;
+    }
+}
+html {
+    width: 100%;
+}
