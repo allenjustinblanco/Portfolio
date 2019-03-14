@@ -30,7 +30,9 @@ $(document).ready(function(){
         $('.toggle').toggleClass('purpletext').removeClass('lightblue').removeClass('lightpurple');
         $('a').toggleClass('purpletext').removeClass('lightblue').removeClass('lightpurple');
     });
+    $('#purple').on('mouseover', function() {
 
+    });
     $('#lightpurple').on('click', function(){
         $('.toggle').toggleClass('lightpurple').removeClass('lightblue').removeClass('purpletext');
         $('a').toggleClass('lightpurple').removeClass('lightblue').removeClass('purpletext')

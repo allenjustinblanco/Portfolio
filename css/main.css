@@ -98,3 +98,14 @@ a:hover {
 span.name {
     font-size: larger;
 }
+
+#lightpurple {
+    background-color: #7200FF;
+}
+#purple {
+    background-color: #AC00FF;
+}
+
+#blue {
+    background-color: #19A6FF;
+}
