@@ -90,4 +90,11 @@ p {
 }
 html {
     width: 100%;
+    font-size: 16px;
+}
+a:hover {
+    transform: scale(1.1);
+}
+span.name {
+    font-size: larger;
 }

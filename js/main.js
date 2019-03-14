@@ -40,6 +40,9 @@ $(document).ready(function(){
         $('.toggle').toggleClass('lightblue').removeClass('lightpurple').removeClass('purpletext');
         $('a').toggleClass('lightblue').removeClass('lightpurple').removeClass('purpletext');
     });
+    $('a.btn-floating').addEventListener('mouseover', function(){
+        $('a.btn-floating').toggleClass('pulse');
+    });
     $('#submit').click(function(){
         var firstname = $('#firstname').val();
         var lastname = $('#lastname').val();

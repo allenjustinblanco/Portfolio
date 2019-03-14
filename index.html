@@ -4,6 +4,7 @@
     <title>Welcome to my page!</title>
     <link href="https://fonts.googleapis.com/css?family=Cabin|Inconsolata|Nunito|Nunito+Sans|Pacifico|Quicksand|Rubik|VT323" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="css/main.css">
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,7 +46,8 @@
         <div class="row">
             <div class="col s12 white-text">
                 <h1 class="header center Quicksand" data-aos="zoom-in"  data-aos-easing="linear"
-                    data-aos-duration="1500">HI! I'M <br/><span class="toggle">JUSTIN BLANCO</span></h1>
+                    data-aos-duration="1500">HI! I'M <br>
+                    <span class="toggle Quicksand name">JUSTIN BLANCO</span></h1>
                 <h6 class="header col s12 white-text Quicksand" data-aos="zoom-in"  data-aos-easing="linear"
                     data-aos-duration="1500">Full Stack Web Developer</h6>
                 <a href="#Contact" class="btn-large waves-effect waves-dark black lighten-1 white-text Nunito-sans">HIRE ME</a>
@@ -80,12 +82,12 @@
                 <h3 class="header center Quicksand"><span class="toggle">My </span>Skills</h3>
                 <div class="icon-block">
                     <div class="carousel">
-                        <a class="carousel-item"><img width="100%" src="images/html5.png"  alt="HTML5"/></a>
-                        <a class="carousel-item"><img width="100%" src="images/css-3.png"  alt="CSS3"/></a>
-                        <a class="carousel-item"><img width="100%" src="images/java.png"  alt="Java"/></a>
-                        <a class="carousel-item"><img width="100%" src="images/spring-boot.png"  alt="MySQL"/></a>
-                        <a class="carousel-item"><img width="100%" src="images/MySQL..png"  alt="Spring Boot"/></a>
-                        <a class="carousel-item"><img width="100%" src="images/java-script.png" alt="Javascript"/></a>
+                        <a class="carousel-item"><img width="100%" src="images/html5.png"  alt="HTML5"/>HTML5</a>
+                        <a class="carousel-item"><img width="100%" src="images/css-3.png"  alt="CSS3"/>CSS3</a>
+                        <a class="carousel-item"><img width="100%" src="images/java.png"  alt="Java"/>Java</a>
+                        <a class="carousel-item"><img width="100%" src="images/spring-boot.png"  alt="Spring Boot"/>Spring Boot</a>
+                        <a class="carousel-item"><img width="100%" src="images/MySQL..png"  alt="MySQL"/>MySQL</a>
+                        <a class="carousel-item"><img width="100%" src="images/java-script.png" alt="Javascript"/>JavaScript</a>
                     </div>
                 </div>
             </div>
@@ -103,7 +105,30 @@
         <li><a class="btn-floating lightpurpleback" id="lightpurple"></a></li>
     </ul>
 </div>
-
+<!--modals-->
+     <div id="tekblog" class="modal">
+         <div class="modal-content">
+             <h4 class="Quicksand">Tek Blog</h4>
+             <p class="Nunito-sans">Fully functional Blog website for anyone into Tech. It allows users to create accounts and blog posts. (Spring Boot, Java, JavaScript, JQuery, MySQL, HTML, CSS, Materialize)</p>
+             <img src="images/springblog.png" alt="" width="100%"/>
+             <div class="row">
+                 <div class="col s4"><img src="images/mobileblog.png" alt="" width="100%"/>
+                 </div>
+                 <div class="col s4"><img src="images/mobileblog3.png" alt="" width="100%"/>
+                 </div>
+                 <div class="col s4"><img src="images/mobileblog2.png" alt="" width="100%"/>
+                 </div>
+             </div>
+         </div>
+     </div>
+     <div id="LocalLegends" class="modal">
+         <div class="modal-content">
+             <h4 class="Quicksand">Local Legends</h4>
+             <p class="Nunito-sans">For Musicians and Bands to connect and collaborate. Users can create Ad posts and search the website for other Ads. (HTML, CSS, JavaScript, JSP, JSTL, Java) </p>
+                <img src="images/Local%20Legends%20Landing%20Page.png" alt="Landing Page" width="100%">
+                <img src="images/LL_loginpage.png" width="100%">
+         </div>
+     </div>
 <!--My Portfolio-->
 <section class="section grey white-text darken-3" id="portfolio">
     <div class="container">
@@ -115,11 +140,10 @@
                     <a href="#" data-reveal-id="modal-01"></a>
                     <div class="card hoverable ">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img src="images/springblog.png" alt="" width="100%"/>
+                            <img src="images/springblog.png" alt="" width="100%" data-target="tekblog" class="modal-trigger toggle Nunito-sans"/>
                         </div>
                         <div class="card-content black white-text">
-                            <span class="card-title activator Quicksand">Tek Blog</span>
-                            <p>(Work in progress)</p>
+                            <span class="card-title activator Quicksand center-align">Tek Blog</span>
                         </div>
                         <div class="card-reveal black">
                             <span class="card-title Quicksand">Tek Blog</span>
@@ -133,11 +157,10 @@
                     <a href="#" data-reveal-id="modal-01"></a>
                     <div class="card hoverable ">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img src="images/cardimg.jpg" alt="" width="100%"/>
+                            <img src="images/Local%20Legends%20Landing%20Page.png" alt="Landing Page" width="100%" data-target="LocalLegends" class="modal-trigger toggle Nunito-sans">
                         </div>
                         <div class="card-content black white-text">
-                            <span class="card-title activator Quicksand">Local Legends</span>
-                            <p>(Work in progress)</p>
+                            <span class="card-title activator Quicksand center-align">Local Legends</span>
                         </div>
                         <div class="card-reveal black">
                             <span class="card-title Quicksand">Local Legends</span>
@@ -146,63 +169,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col s12 m6 l4 portfolio-item" data-aos="zoom-in">
-                <div class="item-wrap">
-                    <a href="#" data-reveal-id="modal-01"></a>
-                    <div class="card hoverable">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img src="images/coffee.png" alt="" width="100%"/>
-                        </div>
-                        <div class="card-content black white-text">
-                            <span class="card-title activator Quicksand" data-position="top" data-tooltip="click for more info">Coffee Project</span>
-                            <p><a href="https://something-out-of-this-world-coffee-project.glitch.me/" target="_blank" class="toggle Nunito-sans">View page</a></p>
-                        </div>
-                        <div class="card-reveal black">
-                            <span class="card-title">Coffee Project</span>
-                            <p>Coffee app with live search for multiple types of coffees. Users can also create new coffee's and add them to the list. (HTML, CSS, JavaScript, JQuery)</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m6 l4 portfolio-item" data-aos="zoom-in">
-                <div class="item-wrap">
-                    <a href="#" data-reveal-id="modal-01"></a>
-                    <div class="card hoverable">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img src="images/cardimg.jpg" alt="" width="100%"/>
-                        </div>
-                        <div class="card-content black white-text">
-                            <span class="card-title activator">Movie Box</span>
-                            <p><a href="#" class="toggle">View page</a></p>
-                        </div>
-                        <div class="card-reveal black">
-                            <span class="card-title">Movie Box</span>
-                            <p>Users can search for any movies they like and view the movie page. (HTML, CSS, JavaScript, JQuery, React, Movies DB) </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m6 l4 portfolio-item" data-aos="zoom-in">
-                <div class="item-wrap">
-                    <a href="#" data-reveal-id="modal-01"></a>
-                    <div class="card hoverable">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img src="images/cardimg.jpg" alt="" width="100%"/>
-                        </div>
-                        <div class="card-content black white-text">
-                            <span class="card-title activator">Weather Application</span>
-                            <p><a href="#" class="toggle">View page</a></p>
-                        </div>
-                        <div class="card-reveal black">
-                            <span class="card-title">Weather Application</span>
-                            <p>Shows a five day forecast of the city of your choosing (HTML, CSS, JavaScript, JQuery, Open Weather Maps API, Google Maps API)</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 </section>
 <!--contact section-->
@@ -211,30 +177,32 @@
        <div class="container">
            <div class="row">
                <div class="col s12 black-text Nunito-sans">
-
-                       <!--<label for="firstname">First Name</label>-->
-                       <!--<input type="text" id="firstname" name="firstname" placeholder="Your name.."/>-->
-
-                       <!--<label for="lastname">Last Name</label>-->
-                       <!--<input type="text" id="lastname" name="lastname" placeholder="Your last name.."/>-->
-
-                       <!--<label for="email">Email</label>-->
-                       <!--<input type="text" id="email" name="email" placeholder="Your email..."/>-->
-
-                       <!--<label for="subject">Subject</label>-->
-                       <!--<textarea id="subject" name="subject" placeholder="Write something.." class="materialize-textarea"></textarea>-->
-
-                       <!--<button class="btn waves-effect waves-light black white-text" type="submit" name="action" id="submit">Submit</button>-->
                    <div class="col s12 center-align">
                        <div class="icon-block">
                            <h6 class="Quicksand white-text toggle"><span class="toggle">Personal</span> Information</h6>
                            <div class="light Nunito white-text">
-                               <p>Name: Allen Justin Blanco</p>
-                               <p>Phone: (210) 518-8350</p>
-                               <p><a href="mailto:blanco.allenjustin@gmail.com">Email: blanco.allenjustin@gmail.com</a></p>
+                               <p>  <i class="material-icons black-text">person</i>
+                                   Name: Allen Justin Blanco</p>
+                               <p>  <i class="material-icons black-text">phone</i>
+                                   Phone: (210) 518-8350</p>
+                               <p><a href="mailto:blanco.allenjustin@gmail.com">  <i class="material-icons black-text">email</i>
+                                   Email: blanco.allenjustin@gmail.com</a></p>
                            </div>
                        </div>
                    </div>
+                   <!--<div class="col s6 right-align">-->
+                       <!--<label for="firstname">First Name</label>-->
+                       <!--<input type="text" id="firstname" name="firstname"/>-->
+
+                       <!--<label for="lastname">Last Name</label>-->
+                       <!--<input type="text" id="lastname" name="lastname"/>-->
+
+                       <!--<label for="email">Email</label>-->
+                       <!--<input type="text" id="email" name="email"/>-->
+
+
+                       <!--<button class="btn waves-effect waves-light black white-text" type="submit" name="action" id="submit">Submit</button>-->
+                   <!--</div>-->
                </div>
            </div>
        </div>
