@@ -98,7 +98,7 @@
 
 <!--fixed action button-->
 <div class="fixed-action-btn" >
-    <a class="btn-floating btn-large white pulse right"></a>
+    <a class="btn-floating btn-large white pulse"></a>
     <ul>
         <li><a class="btn-floating purpletextback" id="purple"></a></li>
         <li><a class="btn-floating lightblueback" id="blue"></a></li>
@@ -129,12 +129,42 @@
                 <img src="images/LL_loginpage.png" width="100%">
          </div>
      </div>
+     <div id="weekndr" class="modal">
+         <div class="modal-content">
+             <h4 class="Quicksand">Weekndr</h4>
+             <p class="Nunito-sans">An Application for all of your travel needs. Create travel groups and plan your whole
+                 travel itinerary in one place. Book Hotels, Restaurants, and Experiences and
+                 communicate to your group with ease. (Spring Boot, Java , Vue , Vuetify, JavaScript,
+                 MySQL, HTML, CSS)</p>
+             <img src="images/weekndr.png" alt="Landing Page" width="100%">
+         </div>
+     </div>
 <!--My Portfolio-->
 <section class="section grey white-text darken-3" id="portfolio">
     <div class="container">
         <div class="row">
             <h3 class="center-align toggle Quicksand" data-aos="zoom-in">Portfolio</h3>
             <p class="lighten-2 center-align Nunito" data-aos="zoom-in">Check out my latest projects.</p>
+            <div class="col s12 m6 portfolio-item" data-aos="zoom-in">
+                <div class="item-wrap">
+                    <a href="#" data-reveal-id="modal-01"></a>
+                    <div class="card hoverable ">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img src="images/weekndr.png" alt="" width="100%" data-target="weekndr" class="modal-trigger toggle Nunito-sans"/>
+                        </div>
+                        <div class="card-content black white-text">
+                            <span class="card-title activator Quicksand center-align"><a href="https://weekndr.world/">Weekndr</a></span>
+                        </div>
+                        <div class="card-reveal black">
+                            <span class="card-title Quicksand"><a href="https://weekndr.world/">Weekndr</a></span>
+                            <p class="Nunito-sans">An Application for all of your travel needs. Create travel groups and plan your whole
+                                travel itinerary in one place. Book Hotels, Restaurants, and Experiences and
+                                communicate to your group with ease. (Spring Boot, Java , Vue , Vuetify, JavaScript,
+                                MySQL, HTML, CSS)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="col s12 m6 portfolio-item" data-aos="zoom-in">
                 <div class="item-wrap">
                     <a href="#" data-reveal-id="modal-01"></a>
@@ -169,6 +199,7 @@
                     </div>
                 </div>
             </div>
+        </div>
     </div>
 </section>
 <!--contact section-->
