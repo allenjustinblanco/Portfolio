@@ -12,9 +12,9 @@ $(document).ready(function(){
     var prevScrollpos = window.pageYOffset;
     $(window).scroll(function(){
         if($(window).scrollTop()>100){
-            $('nav').removeClass('black').removeClass('white-text').addClass('transparent').addClass('black-text');
+            $('nav').removeClass('black-text').addClass('white-text');
         } else{
-            $('nav').removeClass('transparent').addClass('black').removeClass('black-text').addClass('white-text');
+            $('nav').removeClass('white-text').addClass('black-text');
         }
         if($(window).scrollTop()>550){
             var currentScrollPos = window.pageYOffset;
@@ -27,20 +27,20 @@ $(document).ready(function(){
         }
     });
     $('#purple').on('click', function(){
-        $('.toggle').toggleClass('purpletext').removeClass('lightblue').removeClass('lightpurple');
-        $('a').toggleClass('purpletext').removeClass('lightblue').removeClass('lightpurple');
+        $('.toggle').toggleClass('red-text').removeClass('lightblue').removeClass('lightpurple');
+        $('a').toggleClass('red-text').removeClass('lightblue').removeClass('lightpurple');
     });
     $('#purple').on('mouseover', function() {
 
     });
     $('#lightpurple').on('click', function(){
-        $('.toggle').toggleClass('lightpurple').removeClass('lightblue').removeClass('purpletext');
-        $('a').toggleClass('lightpurple').removeClass('lightblue').removeClass('purpletext')
+        $('.toggle').toggleClass('lightpurple').removeClass('lightblue').removeClass('red-text');
+        $('a').toggleClass('lightpurple').removeClass('lightblue').removeClass('red-text')
     });
 
     $('#blue').on('click', function(){
-        $('.toggle').toggleClass('lightblue').removeClass('lightpurple').removeClass('purpletext');
-        $('a').toggleClass('lightblue').removeClass('lightpurple').removeClass('purpletext');
+        $('.toggle').toggleClass('lightblue').removeClass('lightpurple').removeClass('red-text');
+        $('a').toggleClass('lightblue').removeClass('lightpurple').removeClass('red-text');
     });
     $('a.btn-floating').addEventListener('mouseover', function(){
         $('a.btn-floating').toggleClass('pulse');

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head th:fragment="head(title)">
-    <title>Welcome to my page!</title>
+    <title>AJB</title>
     <link href="https://fonts.googleapis.com/css?family=Cabin|Inconsolata|Nunito|Nunito+Sans|Pacifico|Quicksand|Rubik|VT323" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -14,8 +14,8 @@
          <div class="navbar-fixed" id="top">
              <nav class="black white-text" id="navbar">
                  <div class="nav-wrapper container">
-                     <a href="#top"><img src="images/logo4.png" width="100" class="no-padding" alt="logo"/></a>
-                     <a href="#" data-target="slide-out" class="sidenav-trigger white-text"><img src="images/menu.png" alt="menu" width="40" style="margin-top: 15px;"></a>
+                     <a href="#top"><img src="images/colored_logo.png" width="70" height="100%" class="no-padding right" alt="logo"/></a>
+                     <a href="#" data-target="slide-out" class="sidenav-trigger black-text"><i class="center material-icons white-text">menu</i></a>
                      <ul class="right hide-on-med-and-down">
                        <li><a href="#AboutMe">About Me</a></li>
                        <li><a href="https://drive.google.com/file/d/1pYyVSZec25orO742G5ldAz4rHN8Hv_c7/view?usp=sharing" target="_blank">Resume</a></li>
@@ -41,28 +41,31 @@
              <li><a href="#Contact">Contact</a></li>
           </ul>
      </header>
-<div class="parallax-container center valign-wrapper">
+<div class="parallax-container valign-wrapper black">
     <div class="container">
         <div class="row">
-            <div class="col s12 white-text">
-                <h1 class="header center Quicksand" data-aos="zoom-in"  data-aos-easing="linear"
-                    data-aos-duration="1500">HI! I'M <br>
-                    <span class="toggle Quicksand name">JUSTIN BLANCO</span></h1>
-                <h6 class="header col s12 white-text Quicksand" data-aos="zoom-in"  data-aos-easing="linear"
-                    data-aos-duration="1500">Full Stack Web Developer</h6>
-                <a href="#Contact" class="btn-large waves-effect waves-dark black lighten-1 white-text Nunito-sans">HIRE ME</a>
+            <div class="col s12 m4 hide-on-med-and-down">
+                <img src="images/coffee.jpeg" width="100%" alt="coffee" class="side-image">
+            </div>
+            <div class="col s12 m8 white-text">
+                <h1 class="header Nunito" data-aos="fade-in"  data-aos-easing="linear"
+                    data-aos-duration="1000">
+                    <span class="toggle name">ALLEN  <br>JUSTIN<br> BLANCO</span></h1>
+                <h5 class="header white-text Nunito" data-aos="fade-in"  data-aos-easing="linear"
+                    data-aos-duration="1200">Software Engineer</h5>
+                <a href="#Contact" class="btn-large waves-effect waves-dark black lighten-1 white-text Nunito-sans ">HIRE ME</a>
             </div>
         </div>
     </div>
-    <div class="parallax"><img src="images/keyboard.jpg" alt="keyboard" style="width: 100%"/></div>
+    <!-- <div class="parallax"><img src="https://picsum.photos/id/1033/1920/1080?blur" alt="keyboard" style="width: 100%"/></div> -->
 </div>
 <!--About Me-->
-<div class="grey darken-3" id="AboutMe">
+<div class="black" id="AboutMe">
     <div class="section container">
         <h3 class="center-align Quicksand white-text">About <span class="toggle">Me</span></h3>
         <div class="row">
             <div class="col s12 m6 center" data-aos="fade-up">
-                <img width="50%" src="images/portrait.jpg" alt="portrait"/>
+                <img width="50%" src="images/dope.jpeg" alt="portrait" class="side-image"/>
             </div>
             <div class="col s12 m6" data-aos="fade-up-left">
                 <h6 class="toggle Quicksand white-text">My <span class="toggle">Story</span></h6>
@@ -75,7 +78,7 @@
     </div>
 </div>
 <!--My Skills-->
-<div class="parallax-container center valign-wrapper" id="Skills">
+<div class="parallax-container center valign-wrapper black" id="Skills">
     <div class="container">
         <div class="row">
             <div class="col s12 white-text" data-aos="zoom-in">
@@ -93,16 +96,16 @@
             </div>
         </div>
     </div>
-    <div class="parallax"><img src="images/apple.jpg" alt="apple" width="100%" height="1000"/></div>
+    <!-- <div class="parallax"><img src="images/apple.jpg" alt="apple" width="100%" height="1000"/></div> -->
 </div>
 
 <!--fixed action button-->
-<div class="fixed-action-btn" >
-    <a class="btn-floating btn-large white pulse"></a>
+<div class="fixed-action-btn">
+    <a class="btn-floating btn-large white pulse left"></a>
     <ul>
-        <li><a class="btn-floating purpletextback" id="purple"></a></li>
-        <li><a class="btn-floating lightblueback" id="blue"></a></li>
-        <li><a class="btn-floating lightpurpleback" id="lightpurple"></a></li>
+        <li><a class="btn-floating red pulse" id="purple"></a></li>
+        <li><a class="btn-floating lightblueback pulse" id="blue"></a></li>
+        <li><a class="btn-floating lightpurpleback pulse" id="lightpurple"></a></li>
     </ul>
 </div>
 <!--modals-->
@@ -140,7 +143,7 @@
          </div>
      </div>
 <!--My Portfolio-->
-<section class="section grey white-text darken-3" id="portfolio">
+<section class="section white-text blck" id="portfolio">
     <div class="container">
         <div class="row">
             <h3 class="center-align toggle Quicksand" data-aos="zoom-in">Portfolio</h3>
@@ -182,23 +185,6 @@
                     </div>
                 </div>
             </div>
-            <div class="col s12 m6 portfolio-item" data-aos="zoom-in">
-                <div class="item-wrap">
-                    <a href="#" data-reveal-id="modal-01"></a>
-                    <div class="card hoverable ">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img src="images/Local%20Legends%20Landing%20Page.png" alt="Landing Page" width="100%" data-target="LocalLegends" class="modal-trigger toggle Nunito-sans">
-                        </div>
-                        <div class="card-content black white-text">
-                            <span class="card-title activator Quicksand center-align">Local Legends</span>
-                        </div>
-                        <div class="card-reveal black">
-                            <span class="card-title Quicksand">Local Legends</span>
-                            <p class="Nunito-sans">For Musicians and Bands to connect and collaborate. Users can create Ad posts and search the website for other Ads. (HTML, CSS, JavaScript, JSP, JSTL, Java) </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </section>
@@ -213,7 +199,7 @@
                            <h6 class="Quicksand white-text toggle"><span class="toggle">Personal</span> Information</h6>
                            <div class="light Nunito white-text">
                                <p>  <i class="material-icons black-text">person</i>
-                                   Name: Allen Justin Blanco</p>
+                                   Name: <span class="red-text">Allen</span><span class="lightblue"> Justin</span><span class="lightpurple"> Blanco</span></p>
                                <p>  <i class="material-icons black-text">phone</i>
                                    Phone: (210) 518-8350</p>
                                <p><a href="mailto:blanco.allenjustin@gmail.com">  <i class="material-icons black-text">email</i>
@@ -221,19 +207,6 @@
                            </div>
                        </div>
                    </div>
-                   <!--<div class="col s6 right-align">-->
-                       <!--<label for="firstname">First Name</label>-->
-                       <!--<input type="text" id="firstname" name="firstname"/>-->
-
-                       <!--<label for="lastname">Last Name</label>-->
-                       <!--<input type="text" id="lastname" name="lastname"/>-->
-
-                       <!--<label for="email">Email</label>-->
-                       <!--<input type="text" id="email" name="email"/>-->
-
-
-                       <!--<button class="btn waves-effect waves-light black white-text" type="submit" name="action" id="submit">Submit</button>-->
-                   <!--</div>-->
                </div>
            </div>
        </div>
